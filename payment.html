@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 class="pay">Payment Form</h2>
+    <form id="paymentForm" method="POST" action="process_payment.php">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number"><br><br>
+
+        <label for="amount">Appointment Fee:</label>
+        <input type="number" step="0.01" id="amount" name="amount" required placeholder="Enter fee"><br><br>
+
+        <input type="submit" value="Submit Payment">
+    </form>
+
+    <script src="payment.js"></script>
+</body>
+</html>

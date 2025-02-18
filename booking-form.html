@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 class="appoint">Appointment Booking Form</h2>
+    <form id="bookingForm" method="POST" action="process_booking.php">
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="appointment_date">Appointment Date:</label>
+        <input type="date" id="appointment_date" name="appointment_date" required><br><br>
+
+        <label for="appointment_time">Appointment Time:</label>
+        <input type="time" id="appointment_time" name="appointment_time" required><br><br>
+
+        <label for="amount">Appointment Fee:</label>
+        <input type="text" id="amount" name="amount" value="50.00" required placeholder="Enter fee"><br><br>
+
+        <input type="submit" value="Submit and Proceed to Payment">
+    </form>
+
+    <script src="booking.js"></script>
+</body>
+</html>
